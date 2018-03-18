@@ -11,4 +11,7 @@ A J2EE project using JSP and JPA.
 A web project which shows the sport activities.  
 
 - Compiling  
-This contains the program of a lexical analyzer and a grammatical analyzer.
+This contains the program of a lexical analyzer and a grammatical analyzer.  
+
+- Dr.Mind  
+An android project.  
