@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="communicate">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="c_service"/>
+    <schema id="4" parent="1" name="hotel">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="online_shopping"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="snow"/>
+    <schema id="10" parent="1" name="star"/>
+    <schema id="11" parent="1" name="student_score"/>
+    <schema id="12" parent="1" name="sys"/>
+    <table id="13" parent="4" name="apply"/>
+    <table id="14" parent="4" name="associator"/>
+    <table id="15" parent="4" name="bank"/>
+    <table id="16" parent="4" name="branch"/>
+    <table id="17" parent="4" name="center_pay"/>
+    <table id="18" parent="4" name="changeInfor"/>
+    <table id="19" parent="4" name="checkIn"/>
+    <table id="20" parent="4" name="consume"/>
+    <table id="21" parent="4" name="employee"/>
+    <table id="22" parent="4" name="manager"/>
+    <table id="23" parent="4" name="reserve"/>
+    <table id="24" parent="4" name="room"/>
+    <column id="25" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="13" name="applyerName">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="13" name="address">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="13" name="bank_number">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="13" name="name">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="13" name="icard">
+      <Position>6</Position>
+      <DataType>varchar(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="13" name="numOfRoom">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="13" name="apply_time">
+      <Position>8</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="13" name="status">
+      <Position>9</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="13" name="password">
+      <Position>10</Position>
+      <DataType>char(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="14" name="aid">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="14" name="icard">
+      <Position>3</Position>
+      <DataType>char(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="14" name="phone">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="14" name="password">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="14" name="balace">
+      <Position>6</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="14" name="point">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="43" parent="14" name="level">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="44" parent="14" name="status">
+      <Position>9</Position>
+      <DataType>varchar(9)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="14" name="bankId">
+      <Position>10</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="46" parent="14" name="PRIMARY">
+      <ColNames>aid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="15" name="bank_ID">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="15" name="balance">
+      <Position>2</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="49" parent="15" name="PRIMARY">
+      <ColNames>bank_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="16" name="address">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="16" name="bank_number">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="16" name="name">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="16" name="icard">
+      <Position>5</Position>
+      <DataType>char(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="16" name="free_number">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="16" name="reserve_number">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="16" name="use_number">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="58" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="59" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="60" parent="17" name="type">
+      <Position>2</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="17" name="date">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="17" name="aid">
+      <Position>4</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="17" name="price">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="17" name="status">
+      <Position>6</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="17" name="hid">
+      <Position>7</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="66" parent="17" name="center_pay_fk_associator">
+      <ColNames>aid</ColNames>
+    </index>
+    <key id="67" parent="17" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="68" parent="17" name="center_pay_fk_associator">
+      <ColNames>aid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>associator</RefTableName>
+      <RefColNames>aid</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="69" parent="18" name="changeId">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="70" parent="18" name="branchId">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="18" name="oldIcard">
+      <Position>3</Position>
+      <DataType>varchar(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="18" name="oldCity">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="18" name="oldAddress">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="18" name="oldNumOfRoom">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="18" name="newIcard">
+      <Position>7</Position>
+      <DataType>varchar(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="18" name="newCity">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="18" name="newAddress">
+      <Position>9</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="18" name="newNumOfRoom">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="18" name="date">
+      <Position>11</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="18" name="status">
+      <Position>12</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="81" parent="18" name="changeInfor_fk_branch">
+      <ColNames>branchId</ColNames>
+    </index>
+    <key id="82" parent="18" name="PRIMARY">
+      <ColNames>changeId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="83" parent="18" name="changeInfor_fk_branch">
+      <ColNames>branchId</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="84" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="85" parent="19" name="hid">
+      <Position>3</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="19" name="room_type">
+      <Position>5</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="19" name="aid">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+    </column>
+    <column id="88" parent="19" name="time">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="89" parent="19" name="checkIn_fk_aid">
+      <ColNames>aid</ColNames>
+    </index>
+    <index id="90" parent="19" name="checkIn_fk_hid">
+      <ColNames>hid</ColNames>
+    </index>
+    <key id="91" parent="19" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="92" parent="19" name="checkIn_fk_aid">
+      <ColNames>aid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>associator</RefTableName>
+      <RefColNames>aid</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <foreign-key id="93" parent="19" name="checkIn_fk_hid">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="94" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="95" parent="20" name="aid">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="20" name="hid">
+      <Position>3</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="20" name="time">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="20" name="pay_type">
+      <Position>5</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="20" name="room_type">
+      <Position>6</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="20" name="price">
+      <Position>7</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="101" parent="20" name="consume_fk_aid">
+      <ColNames>aid</ColNames>
+    </index>
+    <index id="102" parent="20" name="consume_fk_hid">
+      <ColNames>hid</ColNames>
+    </index>
+    <key id="103" parent="20" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="104" parent="20" name="consume_fk_aid">
+      <ColNames>aid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>associator</RefTableName>
+      <RefColNames>aid</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <foreign-key id="105" parent="20" name="consume_fk_hid">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="106" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="107" parent="21" name="hid">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="21" name="name">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="21" name="sex">
+      <Position>4</Position>
+      <DataType>varchar(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="21" name="icard">
+      <Position>5</Position>
+      <DataType>char(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="21" name="password">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="112" parent="21" name="FKrfsglo9wlbcr1uf4df0txt9bg">
+      <ColNames>hid</ColNames>
+    </index>
+    <key id="113" parent="21" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="114" parent="21" name="FKrfsglo9wlbcr1uf4df0txt9bg">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="115" parent="21" name="employee_fk_branch">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="116" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="117" parent="22" name="password">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="22" name="name">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="22" name="sex">
+      <Position>4</Position>
+      <DataType>varchar(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="22" name="icard">
+      <Position>5</Position>
+      <DataType>varchar(18)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="121" parent="22" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="122" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="123" parent="23" name="aid">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="23" name="hid">
+      <Position>3</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="23" name="operat_time">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="23" name="target_time">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="23" name="status">
+      <Position>6</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="128" parent="23" name="room_type">
+      <Position>7</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="129" parent="23" name="FKfs9h5253x48a2uwkwl2ea2rho">
+      <ColNames>hid</ColNames>
+    </index>
+    <index id="130" parent="23" name="FKm3kfagdog8mt9huyjgls697ik">
+      <ColNames>aid</ColNames>
+    </index>
+    <key id="131" parent="23" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="132" parent="23" name="FKm3kfagdog8mt9huyjgls697ik">
+      <ColNames>aid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>associator</RefTableName>
+      <RefColNames>aid</RefColNames>
+    </foreign-key>
+    <foreign-key id="133" parent="23" name="reserve_fk_associator">
+      <ColNames>aid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>associator</RefTableName>
+      <RefColNames>aid</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <foreign-key id="134" parent="23" name="FKfs9h5253x48a2uwkwl2ea2rho">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="135" parent="23" name="reserve_fk_branch">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="136" parent="24" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="137" parent="24" name="hid">
+      <Position>2</Position>
+      <DataType>int(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="24" name="type">
+      <Position>3</Position>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="139" parent="24" name="price">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="140" parent="24" name="FKcpexxwqu8mjv5r7px4btvr3il">
+      <ColNames>hid</ColNames>
+    </index>
+    <key id="141" parent="24" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="142" parent="24" name="FKcpexxwqu8mjv5r7px4btvr3il">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="143" parent="24" name="room_fk_branch">
+      <ColNames>hid</ColNames>
+      <RefSchemaName>hotel</RefSchemaName>
+      <RefTableName>branch</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Competition</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<div style="background:#f5f5f5">
+     <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SportMan</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li  class="active"><a href="#" >竞赛</a></li>
+                <li><a href="team.html">团队</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        StarryLemon <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="account_person.html">
+                            <span class="glyphicon glyphicon-pencil">
+                            </span>&nbsp;账户设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="friend_notice.html">
+                            <span class="glyphicon glyphicon-user">
+                            </span>&nbsp;我的好友</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="platform.html">
+                            <span class="glyphicon glyphicon-thumbs-up">
+                            </span>&nbsp;社交平台</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="news.html">
+                            <span class="glyphicon glyphicon-envelope">
+                            </span>&nbsp;我的消息</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+     <div class="row">
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8"  >
+
+        <div class="col-md-3">
+            <div>
+                <img src="img/mayday.png" class="img-rounded" alt="image" style="width: 80%;height: 80%;" >
+                <hr>
+            </div>
+            <div>
+                <span class="label label-success">等级</span>
+                <span class="label label-info">健身达人</span>
+            </div>
+            <div style="padding-top: 10%;">
+                <span class="label label-success">积分</span>
+                <span class="label label-info">100</span>
+            </div>
+            <div style="padding-top: 10%;">
+                <span class="label label-success">荣誉</span>
+                <span class="glyphicon glyphicon-leaf"></span>
+                <span class="glyphicon glyphicon-fire"></span>
+                <span class="glyphicon glyphicon-tree-conifer"></span>
+            </div>
+            <hr>
+            <div class="btn-group-vertical" style="padding-top:10% ">
+                <button type="button" class="btn btn-lg btn-info">
+                    <a href="#competition_ing">进行的竞赛</a>
+                </button>
+                <button type="button" class="btn btn-lg btn-info" >
+                    <a href="#competition_success">胜利的竞赛</a>
+                </button>
+                <button type="button" class="btn btn-lg btn-info">
+                    <a href="#competition_failure">失败的竞赛</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-9">
+                        <h1>
+                            我的竞赛列表
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" style="margin-top: 15%;background: mediumspringgreen">
+                            <span class="glyphicon glyphicon-plus"></span> 邀请好友
+                        </button>
+                        <!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            邀请好友
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div>
+                                            <form class="bs-example bs-example-form" role="form">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">竞赛名称：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">竞赛时间：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">竞赛内容：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">竞赛类型：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">参与者：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">押注积分：</span>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">邀请</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-success">
+                <a name="competition_ing"></a>
+                <div class="panel-heading">
+                    <h3 class="panel-title">进行的竞赛 </h3>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <div class="col-md-9">
+                            名称：输了叫爸爸<br>
+                            时间：2016年10月15日~2016年10月25日<br>
+                            活动：每天跑步2公里<br>
+                            状态：
+                            <span class="label label-info">进行中</span>
+                            <br>
+                            类型：双人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：超儿<br>
+                            押注积分：100<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">认输</button>
+                            <button type="button" class="btn btn-danger">挑衅</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-9">
+                            名称：十一的竞赛<br>
+                            时间：2016年11月15日~2016年11月25日<br>
+                            活动：每天游泳1千米<br>
+                            状态：
+                            <span class="label label-info">进行中</span>
+                            <br>
+                            类型：多人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：超儿、海龙<br>
+                            押注积分：200<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">认输</button>
+                            <button type="button" class="btn btn-danger">挑衅</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="panel panel-success" >
+                <a name="competition_success"></a>
+                <div class="panel-heading">
+                    <h3 class="panel-title"> 胜利的竞赛</h3>
+                </div>
+
+                <div class="panel-body">
+
+                    <div>
+                        <div class="col-md-9">
+                            名称：十月的竞赛<br>
+                            时间：2016年11月15日~2016年11月25日<br>
+                            活动：每天游泳1千米<br>
+                            状态：
+                            <span class="label label-success">胜利</span>
+                            <br>
+                            类型：多人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：超儿、海龙<br>
+                            押注积分：200<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">炫耀</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-9">
+                            名称：篮球斗牛<br>
+                            时间：2016年10月15日~2016年10月15日<br>
+                            活动：篮球<br>
+                            状态：
+                            <span class="label label-success">胜利</span>
+                            <br>
+                            类型：双人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：超儿<br>
+                            押注积分：200<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">炫耀</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-9">
+                            名称：羽毛球挑战赛<br>
+                            时间：2016年10月15日~2016年10月16日<br>
+                            活动：羽毛球<br>
+                            状态：
+                            <span class="label label-success">胜利</span>
+                            <br>
+                            类型：双人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：超儿<br>
+                            押注积分：300<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">炫耀</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel panel-success" >
+                <a name="competition_failure"></a>
+                <div class="panel-heading">
+                    <h3 class="panel-title"> 失败的竞赛</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div>
+                        <div class="col-md-9">
+                            名称：与科比的单挑<br>
+                            时间：2016年10月15日~2016年10月25日<br>
+                            活动：篮球斗牛<br>
+                            状态：
+                            <span class="label label-success">胜利</span>
+                            <br>
+                            类型：双人竞赛<br>
+                            发起人：StarryLemon<br>
+                            参与者：科比<br>
+                            押注积分：100<br>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">不服</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-2"></div>
+
+</div>
+    <div class="panel-footer">
+        <p style="margin-left: 35%">Copyright © 2016.Company 南京大学软件学院 All rights reserved.</p>
+    </div>
+</div>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

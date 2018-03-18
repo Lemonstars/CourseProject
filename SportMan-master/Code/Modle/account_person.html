@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+
+<div style="background: #f5f5f5">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">SportMan</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="activity.html">活动</a></li>
+                    <li><a href="competition.html">竞赛</a></li>
+                    <li><a href="team.html">团队</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            StarryLemon<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="account_person.html">
+                            <span class="glyphicon glyphicon-pencil">
+                            </span>&nbsp;账户设置</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="friend_notice.html">
+                            <span class="glyphicon glyphicon-user">
+                            </span>&nbsp;我的好友</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="platform.html">
+                            <span class="glyphicon glyphicon-thumbs-up">
+                            </span>&nbsp;社交平台</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="news.html">
+                            <span class="glyphicon glyphicon-envelope">
+                            </span>&nbsp;我的消息</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="col-md-3">
+                <div>
+                    <img src="img/mayday.png" class="img-rounded" alt="image" style="width: 80%;height: 80%;">
+                    <hr>
+                </div>
+                <div>
+                    <span class="label label-success">等级</span>
+                    <span class="label label-info">健身达人</span>
+                </div>
+                <div style="padding-top: 10%;">
+                    <span class="label label-success">积分</span>
+                    <span class="label label-info">100</span>
+                </div>
+                <div style="padding-top: 10%;">
+                    <span class="label label-success">荣誉</span>
+                    <span class="glyphicon glyphicon-leaf"></span>
+                    <span class="glyphicon glyphicon-fire"></span>
+                    <span class="glyphicon glyphicon-tree-conifer"></span>
+                </div>
+                <hr>
+                <div class="btn-group-vertical" style="padding-top:10% ">
+                    <button type="button" class="btn btn-lg btn-info">
+                        <a href="#">个人资料</a>
+                    </button>
+                    <button type="button" class="btn btn-lg btn-info">
+                        <a href="account_photo.html">头像设置</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="panel-success">
+                    <div class="panel-heading">
+                        <h3>个人资料</h3>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <span>
+                              <label for="nickname">昵称</label>
+                              <input type="text" id="nickname" placeholder="请输入昵称" style="margin-left:5%;">
+                        </span>
+                        <hr>
+                        <span>
+                    <label for="nickname">性別</label>
+                    <label class="checkbox-inline">
+		                <input type="radio" name="sex" id="optionsRadios3" value="option1" checked> 男
+	                </label>
+                    <label class="checkbox-inline">
+	                  	<input type="radio" name="sex" id="optionsRadios4" value="option2"> 女
+                 	</label>
+                </span>
+                        <hr>
+                        <span>
+                            <label for="birthday">生日</label>
+                            <input type="text" id="birthday" placeholder="请输入生日" style="margin-left:5%;">
+                        </span>
+                        <hr>
+                        <span>
+                            <label for="place">城市</label>
+                            <input type="text" id="place" placeholder="请输入城市" style="margin-left:5%;">
+                        </span>
+                        <hr>
+                        <span>
+                            <label for="hobby">兴趣</label>
+                            <input type="text" id="hobby" placeholder="请输入兴趣" style="margin-left:5%;">
+                        </span>
+                    </form>
+                    <button type="button" class="btn btn-success" style="margin-top:10%;margin-left: 80% ">保存</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+    <div class="panel-footer">
+        <p style="margin-left: 35%">Copyright © 2016.Company 南京大学软件学院 All rights reserved.</p>
+    </div>
+</div>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="dbDummy://dbtable:/41ce261/72138cc5-fbfe-479d-8388-58c451e5bb6f/hotel.apply" dialect="MySQL" />
+  </component>
+</project>
