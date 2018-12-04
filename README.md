@@ -1,5 +1,5 @@
 # CourseProject
-The project contains some course projects during undergraduate period in NanJing University.  
+The project contains some course projects during study in NanJing University.  
 
 - OnlineExamSystemServer  
 The server of an online exam system.
@@ -15,3 +15,6 @@ This contains the program of a lexical analyzer and a grammatical analyzer.
 
 - Dr.Mind  
 An android project.  
+
+- Cloud Computing  
+An project contains several exercises about spark.
