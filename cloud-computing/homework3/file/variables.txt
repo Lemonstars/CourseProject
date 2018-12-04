@@ -1,0 +1,5 @@
+localhost:27017
+divorceCases
+lawcase
+/Users/starrylemon/Documents/pythonWorkSpace/cloud-computing/homework3/streaming
+/Users/starrylemon/Documents/pythonWorkSpace/cloud-computing/homework3/output/

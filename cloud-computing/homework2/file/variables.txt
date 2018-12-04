@@ -1,0 +1,3 @@
+100
+/Users/starrylemon/Documents/pythonWorkSpace/cloud-computing/homework2/file/data.txt
+/Users/starrylemon/Documents/pythonWorkSpace/cloud-computing/homework2/file

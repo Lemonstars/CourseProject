@@ -1,0 +1,5 @@
+1.city:aqi map => aqi_average
+2.根据城市名字查
+    2.1 date:aqi map => all_aqi
+    2.2 grade:count map => grade_count
+    2.3 item:count map => six_average
